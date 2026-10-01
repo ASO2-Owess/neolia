@@ -1,0 +1,27 @@
+<header class="site-header">
+  <nav class="nav" aria-label="Navigation principale">
+    <a class="nav__logo" href="/" aria-label="Neolia Chocolat, accueil">
+      <img src="/assets/img/logo-400.webp" width="400" height="160" alt="Neolia Chocolat" decoding="async" fetchpriority="high">
+    </a>
+    <ul class="nav__links">
+      <li><a href="/" data-nav="home">Accueil</a></li>
+      <li><a href="/produits" data-nav="products">Nos produits</a></li>
+      <li><a href="/decouvrir" data-nav="discover">Découvrir Neolia</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a class="btn btn--outline btn--sm nav__call" href="{{TEL}}">Appeler</a>
+      <a class="btn btn--wa btn--sm" href="{{WA_INFO}}" target="_blank" rel="noopener noreferrer"><span class="wa-long">Commander sur WhatsApp</span><span class="wa-short">WhatsApp</span></a>
+      <button class="nav__burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu-mobile" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" id="menu-mobile" hidden>
+    <ul>
+      <li><a href="/" data-nav="home">Accueil</a></li>
+      <li><a href="/produits" data-nav="products">Nos produits</a></li>
+      <li><a href="/decouvrir" data-nav="discover">Découvrir Neolia</a></li>
+    </ul>
+    <a class="btn btn--outline btn--block" href="{{TEL}}">Appeler : {{PHONE}}</a>
+  </div>
+</header>
