@@ -59,7 +59,8 @@ if (args.has('--source')) report();
 
 // ---------- 3. Pages générées ----------
 if (!existsSync(DIST)) { err('dist/ introuvable : lancer « npm run build » avant'); report(); }
-const htmlFiles = walk(DIST).filter((f) => f.endsWith('.html'));
+// Les fichiers de vérification de propriété (Google Search Console : googleXXXX.html) ne sont pas des pages du site
+const htmlFiles = walk(DIST).filter((f) => f.endsWith('.html') && !/(^|[\\/])google[0-9a-f]{8,}\.html$/.test(f));
 const distPath = (url) => {
   const clean = url.split('#')[0].split('?')[0];
   const base = join(DIST, clean);
