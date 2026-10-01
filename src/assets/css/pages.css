@@ -13,3 +13,11 @@
 @media (min-width: 640px) { .page-discover .banner--photo { height: 380px; } }
 .page-discover .split__media--square { aspect-ratio: 4 / 3; }
 @media (min-width: 640px) { .page-discover .split__media--square { aspect-ratio: 1 / 1; } }
+
+/* Produits : bloc « Vous avez trouvé votre chocolat ? » */
+.cta-choice { text-align: center; }
+.cta-choice__inner { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.cta-choice h2 { font-size: var(--h2); }
+.cta-choice .btn--lg { height: 56px; padding: 0 34px; width: 100%; }
+.cta-choice__msg { max-width: 520px; font-size: 12px; color: #c9b99f; }
+@media (min-width: 640px) { .cta-choice .btn--lg { width: auto; } }

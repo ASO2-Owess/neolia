@@ -23,6 +23,7 @@ const vars = {
   WA_SUCRE: wa(cfg.messages.sucre),
   WA_NONSUCRE: wa(cfg.messages.nonSucre),
   MSG_SUCRE: cfg.messages.sucre,
+  MSG_NONSUCRE: cfg.messages.nonSucre,
   YEAR: String(new Date().getFullYear()),
 };
 

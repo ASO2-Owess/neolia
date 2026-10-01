@@ -1,0 +1,141 @@
+<!--meta
+{
+  "path": "/produits",
+  "active": "products",
+  "title": "Nos produits | Chocolat noir sucré et non sucré 100 g – Neolia Chocolat",
+  "description": "Chocolat noir sucré et chocolat noir non sucré Neolia, tablettes de 100 g. Comparez les deux versions et commandez par WhatsApp à Abidjan, Côte d'Ivoire.",
+  "keywords": "chocolat noir sucré, chocolat noir non sucré, chocolat noir sans sucre ajouté, tablette chocolat 100 g, Neolia, chocolat Abidjan",
+  "bodyClass": "page-products",
+  "priority": "0.9",
+  "changefreq": "monthly",
+  "preload": { "href": "/assets/img/elegance-1536.webp", "srcset": "/assets/img/elegance-800.webp 800w, /assets/img/elegance-1536.webp 1536w" },
+  "scripts": ["nav.js", "products.js"],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "{{SITE_URL}}/" },
+        { "@type": "ListItem", "position": 2, "name": "Nos produits", "item": "{{SITE_URL}}/produits" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "{{SITE_URL}}/produits#sucre",
+      "name": "Chocolat noir sucré",
+      "description": "Un chocolat noir gourmand destiné aux amateurs de saveurs chocolatées généreuses.",
+      "image": "{{SITE_URL}}/assets/img/sucre-800.webp",
+      "brand": { "@type": "Brand", "name": "Neolia Chocolat" },
+      "category": "Chocolat noir",
+      "weight": { "@type": "QuantitativeValue", "value": 100, "unitCode": "GRM" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "{{SITE_URL}}/produits#non-sucre",
+      "name": "Chocolat noir non sucré",
+      "description": "Une version sans sucre ajouté pour les consommateurs qui recherchent une dégustation plus sobre.",
+      "image": "{{SITE_URL}}/assets/img/non-sucre-800.webp",
+      "brand": { "@type": "Brand", "name": "Neolia Chocolat" },
+      "category": "Chocolat noir",
+      "weight": { "@type": "QuantitativeValue", "value": 100, "unitCode": "GRM" }
+    }
+  ]
+}
+-->
+<section class="has-bg banner" aria-labelledby="page-titre">
+  <x-img name="elegance" alt="Cacao et chocolat noir" sizes="100vw" class="bg-img" eager></x-img>
+  <div class="shade"></div>
+  <div class="has-bg__content banner__content">
+    <h1 class="banner__title" id="page-titre">Nos produits</h1>
+    <p class="banner__lead">Découvrez les différentes façons de savourer le chocolat noir Neolia.</p>
+  </div>
+</section>
+
+<section class="section" aria-label="Catalogue">
+  <div class="chips chips--filters" role="group" aria-label="Filtrer par catégorie" data-filters>
+    <button class="chip" type="button" aria-pressed="true" data-filter="all">TOUS</button>
+    <button class="chip" type="button" aria-pressed="false" data-filter="sucre">SUCRÉ</button>
+    <button class="chip" type="button" aria-pressed="false" data-filter="non-sucre">NON SUCRÉ</button>
+  </div>
+  <div class="grid-cards grid-cards--lg">
+    <article class="card card--lg" id="sucre" data-product="sucre">
+      <div class="card__media"><x-img name="sucre" alt="Chocolat noir sucré Neolia, tablette de 100 g" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+      <div class="card__body">
+        <span class="tag tag--sucre">SUCRÉ</span>
+        <h2 class="card__title">Chocolat noir sucré</h2>
+        <p class="card__text">Un chocolat noir gourmand destiné aux amateurs de saveurs chocolatées généreuses.</p>
+        <dl class="specs">
+          <div><dt>Poids</dt><dd>100 g</dd></div>
+          <div><dt>Profil</dt><dd>Gourmand et équilibré</dd></div>
+        </dl>
+        <a class="btn btn--wa" href="{{WA_SUCRE}}" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
+      </div>
+    </article>
+    <article class="card card--lg" id="non-sucre" data-product="non-sucre">
+      <div class="card__media"><x-img name="non-sucre" alt="Chocolat noir non sucré Neolia, tablette de 100 g" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+      <div class="card__body">
+        <span class="tag tag--non-sucre">NON SUCRÉ</span>
+        <h2 class="card__title">Chocolat noir non sucré</h2>
+        <p class="card__text">Une version sans sucre ajouté pour les consommateurs qui recherchent une dégustation plus sobre.</p>
+        <dl class="specs">
+          <div><dt>Poids</dt><dd>100 g</dd></div>
+          <div><dt>Profil</dt><dd>Sobre et intense</dd></div>
+        </dl>
+        <a class="btn btn--wa" href="{{WA_NONSUCRE}}" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section section--cream-2" aria-labelledby="neolia-titre">
+  <div class="split">
+    <div class="split__media split__media--square"><x-img name="packing" alt="Packaging Neolia Chocolat" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+    <div class="split__text">
+      <h2 id="neolia-titre">Le chocolat Neolia</h2>
+      <p>Chaque tablette de 100 g est présentée dans son emballage Neolia, aux couleurs brun cacao et or de la marque.</p>
+      <a class="btn btn--wa btn--self-start" href="{{WA_SUCRE}}" target="_blank" rel="noopener noreferrer" data-wa-selected>Commander sur WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="univers-titre">
+  <div class="split">
+    <div class="split__media"><x-img name="feves" alt="Nature morte de fèves de cacao" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+    <div class="split__text">
+      <h2 id="univers-titre">L'univers du cacao</h2>
+      <p>Le cacao est au cœur de chaque chocolat Neolia. Sa qualité détermine le goût, l'intensité et la texture de la tablette.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="comparatif-titre">
+  <h2 class="section__title section__title--lg" id="comparatif-titre">Sucré ou non sucré</h2>
+  <div class="compare">
+    <table>
+      <caption class="visually-hidden">Comparatif entre le chocolat noir sucré et non sucré</caption>
+      <thead>
+        <tr><th scope="col" class="compare__corner"><span class="visually-hidden">Critère</span></th><th scope="col">Sucré</th><th scope="col">Non sucré</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Goût</th><td>Chocolatée, gourmande, plus douce en bouche.</td><td>Cacao plus marqué, plus intense.</td></tr>
+        <tr><th scope="row">Sucre ajouté</th><td>Oui.</td><td>Non.</td></tr>
+        <tr><th scope="row">Profil de dégustation</th><td>Rond et équilibré.</td><td>Sobre et franc.</td></tr>
+        <tr><th scope="row">Pour quel consommateur ?</th><td>Pour les amateurs de saveurs généreuses.</td><td>Pour ceux qui préfèrent un chocolat sans sucre ajouté.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section section--brown cta-choice" aria-labelledby="choix-titre">
+  <div class="cta-choice__inner">
+    <h2 id="choix-titre">Vous avez trouvé votre chocolat ?</h2>
+    <div class="chips chips--gold" role="group" aria-label="Choisir un chocolat" data-choices>
+      <button class="chip" type="button" aria-pressed="true" data-choice="sucre" data-wa="{{WA_SUCRE}}" data-msg="{{MSG_SUCRE}}">Chocolat noir sucré</button>
+      <button class="chip" type="button" aria-pressed="false" data-choice="non-sucre" data-wa="{{WA_NONSUCRE}}" data-msg="{{MSG_NONSUCRE}}">Chocolat noir non sucré</button>
+    </div>
+    <a class="btn btn--wa btn--lg" href="{{WA_SUCRE}}" target="_blank" rel="noopener noreferrer" data-wa-selected>Commander sur WhatsApp</a>
+    <p class="placeholder cta-choice__msg">Message prérempli : « <span data-selected-msg>{{MSG_SUCRE}}</span> »</p>
+  </div>
+</section>
