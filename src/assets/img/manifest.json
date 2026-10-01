@@ -1,0 +1,119 @@
+{
+  "cabosses": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "chocolat-chaud": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "chocolatier": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "coucher-soleil": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "cta": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "degustation-interieur": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "elegance": {
+    "widths": [
+      800,
+      1536
+    ],
+    "ratio": [
+      1536,
+      1024
+    ]
+  },
+  "feves": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "hero": {
+    "widths": [
+      800,
+      1600
+    ],
+    "ratio": [
+      1600,
+      900
+    ]
+  },
+  "non-sucre": {
+    "widths": [
+      800
+    ],
+    "ratio": [
+      800,
+      1000
+    ]
+  },
+  "packing": {
+    "widths": [
+      800
+    ],
+    "ratio": [
+      800,
+      1000
+    ]
+  },
+  "sucre": {
+    "widths": [
+      800
+    ],
+    "ratio": [
+      800,
+      1000
+    ]
+  }
+}
