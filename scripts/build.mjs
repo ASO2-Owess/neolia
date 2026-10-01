@@ -95,7 +95,8 @@ for (const file of pages) {
   if (!noindex && file !== '404.html') indexable.push({ canonical, changefreq: meta.changefreq || 'monthly', priority: meta.priority || '0.5' });
 }
 
+indexable.sort((a, b) => Number(b.priority) - Number(a.priority));
 const today = new Date().toISOString().slice(0, 10);
 writeFileSync(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexable.map((u) => `  <url>\n    <loc>${u.canonical}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>\n`);
-writeFileSync(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /bientot\n\nSitemap: ${vars.SITE_URL}/sitemap.xml\n`);
+writeFileSync(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${vars.SITE_URL}/sitemap.xml\n`);
 console.log(`✔ ${pages.length} pages générées dans dist/ (${indexable.length} indexables)`);
