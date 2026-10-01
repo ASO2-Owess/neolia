@@ -74,20 +74,20 @@ for (const file of pages) {
   const robots = noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1';
   const ogImage = `${vars.SITE_URL}/assets/img/og-image.jpg`;
   let html = layout
-    .replace('{{TITLE}}', esc(meta.title))
-    .replace('{{DESCRIPTION}}', esc(meta.description))
-    .replace('{{KEYWORDS}}', esc(meta.keywords || ''))
-    .replace(/\{\{CANONICAL\}\}/g, canonical)
-    .replace('{{ROBOTS}}', robots)
-    .replace(/\{\{OG_IMAGE\}\}/g, ogImage)
-    .replace('{{OG_TYPE}}', meta.ogType || 'website')
-    .replace('{{PRELOAD}}', meta.preload ? `<link rel="preload" as="image" href="${meta.preload.href}" imagesrcset="${meta.preload.srcset}" imagesizes="100vw" fetchpriority="high">` : '')
-    .replace('{{JSONLD}}', ld)
-    .replace('{{BODY_CLASS}}', meta.bodyClass || '')
-    .replace('{{NAV}}', navHtml)
-    .replace('{{FOOTER}}', footer)
-    .replace('{{SCRIPTS}}', (meta.scripts || []).map((s) => `<script src="/assets/js/${s}" defer></script>`).join('\n'))
-    .replace('{{CONTENT}}', body);
+    .replace(/\{\{TITLE\}\}/g, () => esc(meta.title))
+    .replace(/\{\{DESCRIPTION\}\}/g, () => esc(meta.description))
+    .replace(/\{\{KEYWORDS\}\}/g, () => esc(meta.keywords || ''))
+    .replace(/\{\{CANONICAL\}\}/g, () => canonical)
+    .replace(/\{\{ROBOTS\}\}/g, () => robots)
+    .replace(/\{\{OG_IMAGE\}\}/g, () => ogImage)
+    .replace(/\{\{OG_TYPE\}\}/g, () => meta.ogType || 'website')
+    .replace(/\{\{PRELOAD\}\}/g, () => meta.preload ? `<link rel="preload" as="image" href="${meta.preload.href}" imagesrcset="${meta.preload.srcset}" imagesizes="100vw" fetchpriority="high">` : '')
+    .replace(/\{\{JSONLD\}\}/g, () => ld)
+    .replace(/\{\{BODY_CLASS\}\}/g, () => meta.bodyClass || '')
+    .replace(/\{\{NAV\}\}/g, () => navHtml)
+    .replace(/\{\{FOOTER\}\}/g, () => footer)
+    .replace(/\{\{SCRIPTS\}\}/g, () => (meta.scripts || []).map((s) => `<script src="/assets/js/${s}" defer></script>`).join('\n'))
+    .replace('{{CONTENT}}', () => body);
   html = fill(renderImages(html));
   const out = file === 'index.html' ? 'index.html' : file === '404.html' ? '404.html' : join(file.replace('.html', ''), 'index.html');
   mkdirSync(dirname(join(DIST, out)), { recursive: true });

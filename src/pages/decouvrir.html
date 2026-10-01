@@ -1,0 +1,198 @@
+<!--meta
+{
+  "path": "/decouvrir",
+  "active": "discover",
+  "title": "Découvrir Neolia | Du cacao au chocolat noir – Notre histoire et FAQ",
+  "description": "Du cacao au chocolat : découvrez l'histoire, le savoir-faire et les repères sur le chocolat noir Neolia, marque ivoirienne basée à Abidjan. Questions fréquentes et contact.",
+  "keywords": "Neolia, histoire Neolia Chocolat, du cacao au chocolat, chocolat noir ivoirien, cacao Côte d'Ivoire, FAQ chocolat noir",
+  "bodyClass": "page-discover",
+  "priority": "0.8",
+  "changefreq": "monthly",
+  "preload": {
+    "href": "/assets/img/cabosses-1600.webp",
+    "srcset": "/assets/img/cabosses-800.webp 800w, /assets/img/cabosses-1600.webp 1600w"
+  },
+  "scripts": [
+    "nav.js"
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "{{SITE_URL}}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Découvrir Neolia",
+          "item": "{{SITE_URL}}/decouvrir"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quels types de chocolat propose Neolia ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neolia Chocolat propose du chocolat noir sucré et du chocolat noir non sucré."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre le chocolat sucré et non sucré ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le chocolat noir sucré contient du sucre ajouté. La version non sucrée est sans sucre ajouté, avec un goût de cacao plus marqué."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment commander ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cliquez sur « Commander sur WhatsApp » : un message prérempli avec le produit choisi s’ouvre. Vous pouvez aussi appeler le {{PHONE}}."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment contacter Neolia ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Par téléphone au {{PHONE}} ou par WhatsApp au {{WA_NUMBER_DISPLAY}}."
+          }
+        }
+      ]
+    }
+  ]
+}
+-->
+<section class="has-bg banner" aria-labelledby="page-titre">
+  <x-img name="cabosses" alt="Cabosses et fèves de cacao au soleil" sizes="100vw" class="bg-img" eager></x-img>
+  <div class="shade"></div>
+  <div class="has-bg__content banner__content">
+    <p class="eyebrow">Découvrir Neolia</p>
+    <h1 class="banner__title" id="page-titre">Du cacao au chocolat</h1>
+    <p class="banner__lead">Le cacao est la graine du cacaoyer, contenue dans une cabosse. Les fèves sont ensuite préparées puis transformées en chocolat. La qualité des matières premières influence directement le goût final.</p>
+  </div>
+</section>
+
+<section class="section section--white" aria-label="Les étapes du cacao au chocolat">
+  <ol class="steps">
+    <li class="step"><div class="step__n">01</div><h3 class="step__title">Cacao</h3><p class="placeholder" data-placeholder>[Description à fournir]</p></li>
+    <li class="step"><div class="step__n">02</div><h3 class="step__title">Sélection</h3><p class="placeholder" data-placeholder>[Description à fournir]</p></li>
+    <li class="step"><div class="step__n">03</div><h3 class="step__title">Préparation</h3><p class="placeholder" data-placeholder>[Description à fournir]</p></li>
+    <li class="step"><div class="step__n">04</div><h3 class="step__title">Transformation</h3><p class="placeholder" data-placeholder>[Description à fournir]</p></li>
+    <li class="step"><div class="step__n">05</div><h3 class="step__title">Chocolat</h3><p class="placeholder" data-placeholder>[Description à fournir]</p></li>
+  </ol>
+</section>
+
+<section class="section story" aria-labelledby="histoire-titre">
+  <h2 class="section__title" id="histoire-titre">Notre histoire</h2>
+  <p>Neolia Chocolat est une marque ivoirienne de chocolat noir. Son ambition : proposer un chocolat soigné, au goût franc, simple à choisir et simple à commander.</p>
+  <p>Sucré pour la gourmandise, non sucré pour une dégustation plus sobre : deux produits, une même exigence de qualité.</p>
+  <p class="placeholder" data-placeholder>[À renseigner : année de création, fondateur(s), origine du projet]</p>
+</section>
+
+<section class="section section--cream-2" aria-labelledby="savoirfaire-titre">
+  <div class="split split--text-first">
+    <div class="split__text">
+      <h2 id="savoirfaire-titre">Notre savoir-faire</h2>
+      <p>Une attention particulière est portée à la préparation du chocolat, de la sélection des matières premières à la dégustation.</p>
+      <p class="placeholder" data-placeholder>[Détails du procédé à fournir par Neolia]</p>
+    </div>
+    <div class="split__media split__media--square"><x-img name="chocolatier" alt="Chocolatier artisanal au travail" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="moment-titre">
+  <div class="split">
+    <div class="split__media split__media--square"><x-img name="chocolat-chaud" alt="Dégustation gourmande au chocolat chaud" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+    <div class="split__text">
+      <h2 id="moment-titre">Le chocolat comme moment de plaisir</h2>
+      <p>Un carré de chocolat se partage, se savoure et accompagne les moments de détente.</p>
+    </div>
+  </div>
+</section>
+
+<section class="has-bg banner banner--moments" aria-labelledby="moments-titre">
+  <x-img name="coucher-soleil" alt="Dégustation de chocolat au coucher du soleil" sizes="100vw" class="bg-img"></x-img>
+  <div class="shade"></div>
+  <div class="has-bg__content banner__content banner__content--left">
+    <h2 id="moments-titre" class="banner__h2">Un chocolat pour vos moments</h2>
+    <a class="btn btn--gold btn--self-start" href="/produits">Découvrir nos produits</a>
+  </div>
+</section>
+
+<section class="banner--photo has-bg" aria-hidden="true">
+  <x-img name="elegance" alt="" sizes="100vw" class="bg-img"></x-img>
+</section>
+
+<section class="section" aria-labelledby="infos-titre">
+  <h2 class="section__title section__title--lg" id="infos-titre">Informations sur le chocolat noir</h2>
+  <div class="infos">
+    <div class="info"><h3>Cacao</h3><p>Le chocolat noir est fabriqué à partir de fèves de cacao, dont la proportion varie selon le produit.</p></div>
+    <div class="info"><h3>Antioxydants</h3><p>Le cacao contient naturellement des composés antioxydants, comme les polyphénols.</p></div>
+    <div class="info"><h3>Minéraux</h3><p>Le cacao apporte naturellement certains minéraux, selon la composition du produit.</p></div>
+    <div class="info"><h3>Magnésium</h3><p>Le magnésium fait partie des minéraux naturellement présents dans le cacao.</p></div>
+    <div class="info"><h3>Énergie</h3><p>Le chocolat est un aliment énergétique, généralement apprécié en petite quantité.</p></div>
+    <div class="info"><h3>Plaisir</h3><p>Déguster un carré de chocolat peut contribuer à un moment de détente et de plaisir.</p></div>
+  </div>
+  <p class="disclaimer">Ces informations sont générales et ne remplacent pas les recommandations d'un professionnel de santé.</p>
+</section>
+
+<section class="section section--white" aria-labelledby="faq-titre">
+  <h2 class="section__title section__title--lg" id="faq-titre">Questions fréquentes</h2>
+  <div class="faq">
+    <details name="faq" open>
+      <summary>Quels types de chocolat propose Neolia ?</summary>
+      <p class="faq__answer">Neolia Chocolat propose du chocolat noir sucré et du chocolat noir non sucré.</p>
+    </details>
+    <details name="faq">
+      <summary>Quelle est la différence entre le chocolat sucré et non sucré ?</summary>
+      <p class="faq__answer">Le chocolat noir sucré contient du sucre ajouté. La version non sucrée est sans sucre ajouté, avec un goût de cacao plus marqué.</p>
+    </details>
+    <details name="faq">
+      <summary>Quels sont les formats disponibles ?</summary>
+      <p class="faq__answer">Format 100 g pour les deux chocolats. Autres formats : <span class="placeholder" data-placeholder>information à préciser par Neolia Chocolat</span>.</p>
+    </details>
+    <details name="faq">
+      <summary>Comment commander ?</summary>
+      <p class="faq__answer">Cliquez sur « Commander sur WhatsApp » : un message prérempli avec le produit choisi s’ouvre. Vous pouvez aussi appeler le {{PHONE}}.</p>
+    </details>
+    <details name="faq">
+      <summary>Comment contacter Neolia ?</summary>
+      <p class="faq__answer">Par téléphone au {{PHONE}} ou par WhatsApp au {{WA_NUMBER_DISPLAY}}.</p>
+    </details>
+    <details name="faq">
+      <summary>Livrez-vous ?</summary>
+      <p class="faq__answer"><span class="placeholder" data-placeholder>Information à préciser par Neolia Chocolat</span></p>
+    </details>
+    <details name="faq">
+      <summary>Quels sont les moyens de paiement ?</summary>
+      <p class="faq__answer"><span class="placeholder" data-placeholder>Information à préciser par Neolia Chocolat</span></p>
+    </details>
+  </div>
+</section>
+
+<section class="section section--brown" aria-labelledby="contact-titre">
+  <div class="contact">
+    <div class="contact__body">
+      <h2 id="contact-titre" class="contact__title">Contact</h2>
+      <p>Téléphone : <a href="{{TEL}}">{{PHONE}}</a><br>WhatsApp : <a href="{{WA_BASE}}" target="_blank" rel="noopener noreferrer">{{WA_NUMBER_DISPLAY}}</a></p>
+      <p class="contact__meta">Localisation : Abidjan, Côte d’Ivoire<br>Horaires : du lundi au samedi</p>
+      <div class="btn-row btn-row--stack-mobile">
+        <a class="btn btn--outline" href="{{TEL}}">Appeler maintenant</a>
+        <a class="btn btn--wa" href="{{WA_INFO}}" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
