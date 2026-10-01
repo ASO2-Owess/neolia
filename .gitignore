@@ -1,0 +1,22 @@
+# Build
+dist/
+.vercel/
+node_modules/
+
+# Secrets & environnement
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Éditeurs / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Sources de design (maquettes Claude Design, images originales non optimisées)
+neolia-chocolat-mockups/
+/images/
+/logo/
