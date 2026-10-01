@@ -236,3 +236,9 @@
 
 /* Mouvement réduit : pas d'animation superflue */
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* ---------- Utilitaires ---------- */
+.section__title--lg { margin-bottom: 32px; }
+.btn--self-start { align-self: flex-start; }
+.cta__content h2 { font-size: var(--h2); }
+.testimonials .section__title { margin-bottom: 6px; }

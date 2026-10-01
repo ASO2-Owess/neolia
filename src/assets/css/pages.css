@@ -1,0 +1,15 @@
+/* Ajustements propres à chaque page */
+
+/* Accueil : bouton de la section « Pourquoi Neolia » sur fond blanc, etc. */
+.page-home .section--dark .split__text { gap: 16px; }
+
+/* Produits : espacements légèrement plus serrés que l'accueil */
+.page-products { --pad-y: 44px; }
+@media (min-width: 640px) { .page-products { --pad-y: 56px; } }
+@media (min-width: 1040px) { .page-products { --pad-y: 80px; } }
+
+/* Découvrir */
+.page-discover .banner--photo { height: 220px; padding: 0; }
+@media (min-width: 640px) { .page-discover .banner--photo { height: 380px; } }
+.page-discover .split__media--square { aspect-ratio: 4 / 3; }
+@media (min-width: 640px) { .page-discover .split__media--square { aspect-ratio: 1 / 1; } }

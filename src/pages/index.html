@@ -1,0 +1,183 @@
+<!--meta
+{
+  "path": "/",
+  "active": "home",
+  "title": "Neolia Chocolat | Chocolat noir sucré et non sucré à Abidjan",
+  "description": "Neolia Chocolat, marque ivoirienne de chocolat noir : tablettes de 100 g sucrées et non sucrées. Découvrez nos chocolats et commandez directement sur WhatsApp à Abidjan.",
+  "keywords": "Neolia, Neolia Chocolat, chocolat noir, chocolat noir non sucré, chocolat noir sucré, chocolat ivoirien, chocolat Abidjan, chocolat Côte d'Ivoire",
+  "bodyClass": "page-home",
+  "priority": "1.0",
+  "changefreq": "weekly",
+  "preload": { "href": "/assets/img/hero-1600.webp", "srcset": "/assets/img/hero-800.webp 800w, /assets/img/hero-1600.webp 1600w" },
+  "scripts": ["nav.js"],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "{{SITE_URL}}/#website",
+      "url": "{{SITE_URL}}/",
+      "name": "Neolia Chocolat",
+      "inLanguage": "fr-CI"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "{{SITE_URL}}/#organization",
+      "name": "Neolia Chocolat",
+      "alternateName": "Neolia",
+      "url": "{{SITE_URL}}/",
+      "logo": "{{SITE_URL}}/assets/img/logo-512.png",
+      "image": "{{SITE_URL}}/assets/img/og-image.jpg",
+      "description": "Marque ivoirienne de chocolat noir, en version sucrée et non sucrée.",
+      "slogan": "Votre plaisir, notre chocolat.",
+      "telephone": "+2250706269826",
+      "address": { "@type": "PostalAddress", "addressLocality": "Abidjan", "addressCountry": "CI" },
+      "areaServed": { "@type": "Country", "name": "Côte d'Ivoire" },
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+2250706269826", "contactType": "customer service", "availableLanguage": "fr" },
+        { "@type": "ContactPoint", "telephone": "+2250101285017", "contactType": "sales", "availableLanguage": "fr", "description": "WhatsApp" }
+      ]
+    }
+  ]
+}
+-->
+<section class="has-bg hero" aria-labelledby="hero-title">
+  <x-img name="hero" alt="Carrés de chocolat noir, fèves et cabosse de cacao" sizes="100vw" class="bg-img bg-img--hero" eager></x-img>
+  <div class="shade"></div>
+  <div class="hero__content has-bg__content">
+    <p class="eyebrow">Le goût du bien-être</p>
+    <h1 class="hero__title" id="hero-title">Neolia Chocolat</h1>
+    <p class="hero__tagline">Le plaisir du chocolat, simplement.</p>
+    <p class="hero__lead">Découvrez nos chocolats noirs, sucrés et non sucrés, pensés pour les amateurs de goût et de caractère.</p>
+    <div class="btn-row btn-row--stack-mobile">
+      <a class="btn btn--wa" href="{{WA_INFO}}" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
+      <a class="btn btn--gold" href="/produits">Découvrir nos produits</a>
+      <a class="btn btn--outline" href="{{TEL}}">Appeler</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="produits-titre">
+  <h2 class="section__title" id="produits-titre">Nos produits</h2>
+  <p class="section__intro">Deux façons de savourer le chocolat noir.</p>
+  <div class="grid-cards">
+    <article class="card">
+      <div class="card__media"><x-img name="sucre" alt="Chocolat noir sucré Neolia, tablette de 100 g" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+      <div class="card__body">
+        <h3 class="card__title">Chocolat noir sucré</h3>
+        <p class="card__text">Une expérience chocolatée gourmande et équilibrée.</p>
+        <a class="btn btn--dark" href="/produits#sucre">Voir le produit</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><x-img name="non-sucre" alt="Chocolat noir non sucré Neolia, tablette de 100 g" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+      <div class="card__body">
+        <h3 class="card__title">Chocolat noir non sucré</h3>
+        <p class="card__text">Pour celles et ceux qui préfèrent un chocolat sans sucre ajouté.</p>
+        <a class="btn btn--dark" href="/produits#non-sucre">Voir le produit</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="pourquoi-titre">
+  <h2 class="section__title section__title--lg" id="pourquoi-titre">Pourquoi choisir Neolia ?</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="feature__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
+      <h3 class="feature__title">Qualité</h3>
+      <p class="feature__text">Un chocolat soigné, du début à la fin.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.8 4.5v9L12 21l-7.8-4.5v-9z"/></svg></div>
+      <h3 class="feature__title">Savoir-faire</h3>
+      <p class="feature__text">Une préparation attentive et régulière.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 17l-5.4 2.8 1.1-6.1L3.2 9.4l6.1-.8z"/></svg></div>
+      <h3 class="feature__title">Goût</h3>
+      <p class="feature__text">Des saveurs franches, un vrai caractère.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21zM12 12a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></svg></div>
+      <h3 class="feature__title">Proximité</h3>
+      <p class="feature__text">Une marque à l’écoute de ses clients.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11zM9 20v-6h6v6"/></svg></div>
+      <h3 class="feature__title">Fabrication locale</h3>
+      <p class="feature__text">Un chocolat ivoirien, préparé localement.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="plaisir-titre">
+  <div class="split split--dark split--reverse-mobile">
+    <div class="split__text">
+      <p class="eyebrow">Bien-être et chocolat</p>
+      <h2 id="plaisir-titre">Le plaisir du chocolat</h2>
+      <p>Le chocolat noir se déguste lentement, pour son goût et son caractère. Voici quelques repères généraux sur le cacao.</p>
+      <ul class="bullets">
+        <li><span><strong>Antioxydants.</strong> Le cacao est naturellement riche en composés antioxydants.</span></li>
+        <li><span><strong>Minéraux.</strong> Le cacao contient naturellement certains minéraux, dont le magnésium.</span></li>
+        <li><span><strong>Énergie.</strong> Le chocolat est un aliment énergétique, à savourer avec modération.</span></li>
+        <li><span><strong>Plaisir.</strong> Généralement associé à un moment de détente et de gourmandise.</span></li>
+      </ul>
+      <p class="note">Informations générales, qui ne remplacent pas les recommandations d'un professionnel de santé.</p>
+      <a class="link-underline" href="/decouvrir">En savoir plus</a>
+    </div>
+    <div class="split__media split__media--portrait"><x-img name="degustation-interieur" alt="Dégustation de chocolat dans un intérieur chaleureux" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="apropos-titre">
+  <div class="split">
+    <div class="split__media split__media--portrait"><x-img name="cabosses" alt="Cabosses et fèves de cacao au soleil" sizes="(min-width: 1040px) 40vw, 100vw"></x-img></div>
+    <div class="split__text">
+      <p class="eyebrow eyebrow--dark">À propos de Neolia</p>
+      <h2 id="apropos-titre">Une passion pour le chocolat</h2>
+      <p>Neolia Chocolat est une marque ivoirienne de chocolat noir. Elle propose un chocolat soigné, au goût franc, en version sucrée et non sucrée.</p>
+      <a class="btn btn--dark btn--self-start" href="/decouvrir">Découvrir Neolia</a>
+    </div>
+  </div>
+</section>
+
+<section class="has-bg testimonials" aria-labelledby="temoignages-titre">
+  <x-img name="coucher-soleil" alt="Dégustation de chocolat au coucher du soleil" sizes="100vw" class="bg-img bg-img--top"></x-img>
+  <div class="shade"></div>
+  <div class="has-bg__content testimonials__content">
+    <h2 class="section__title" id="temoignages-titre">Témoignages</h2>
+    <p class="placeholder" data-placeholder>[Exemples : à remplacer par de vrais avis clients]</p>
+    <div class="testimonials__grid">
+      <figure class="quote">
+        <div class="quote__stars" role="img" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>« Un chocolat délicieux et agréable à déguster. »</blockquote>
+        <figcaption>— Client Neolia (exemple)</figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="quote__stars" role="img" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>« Un goût intense, exactement ce que je cherchais. »</blockquote>
+        <figcaption>— Client Neolia (exemple)</figcaption>
+      </figure>
+      <figure class="quote">
+        <div class="quote__stars" role="img" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>« Commande simple par WhatsApp, chocolat très bon. »</blockquote>
+        <figcaption>— Client Neolia (exemple)</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="has-bg cta" aria-labelledby="cta-titre">
+  <x-img name="cta" alt="Nature morte de cacao et de chocolat rustique" sizes="100vw" class="bg-img"></x-img>
+  <div class="shade"></div>
+  <div class="has-bg__content cta__content">
+    <h2 id="cta-titre">Une envie de chocolat ?</h2>
+    <p>Découvrez votre chocolat Neolia et commandez directement par WhatsApp.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="{{WA_INFO}}" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
+      <a class="btn btn--outline" href="{{TEL}}">Appeler</a>
+    </div>
+    <p class="cta__phones">{{PHONE}} · {{WA_NUMBER_DISPLAY}}</p>
+  </div>
+</section>
