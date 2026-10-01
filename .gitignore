@@ -20,3 +20,6 @@ Thumbs.db
 neolia-chocolat-mockups/
 /images/
 /logo/
+
+# Amorçage local de l'historique Git (bundle + script)
+/_git-setup/
