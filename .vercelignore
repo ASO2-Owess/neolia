@@ -1,0 +1,8 @@
+# Fichiers non envoyés à Vercel au déploiement (le site se reconstruit dans dist/)
+neolia-chocolat-mockups/
+images/
+logo/
+_git-setup/
+node_modules/
+dist/
+.git/
