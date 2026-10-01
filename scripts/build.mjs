@@ -99,4 +99,8 @@ indexable.sort((a, b) => Number(b.priority) - Number(a.priority));
 const today = new Date().toISOString().slice(0, 10);
 writeFileSync(join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexable.map((u) => `  <url>\n    <loc>${u.canonical}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>\n`);
 writeFileSync(join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${vars.SITE_URL}/sitemap.xml\n`);
+// security.txt (RFC 9116) : l'expiration est renouvelée à chaque build (+1 an)
+const expires = new Date(Date.now() + 365 * 24 * 3600 * 1000).toISOString().replace(/\.\d+Z$/, '.000Z');
+mkdirSync(join(DIST, '.well-known'), { recursive: true });
+writeFileSync(join(DIST, '.well-known/security.txt'), `Contact: mailto:${cfg.securityContact}\nExpires: ${expires}\nPreferred-Languages: fr, en\nCanonical: ${vars.SITE_URL}/.well-known/security.txt\n`);
 console.log(`✔ ${pages.length} pages générées dans dist/ (${indexable.length} indexables)`);
