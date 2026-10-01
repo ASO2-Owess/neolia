@@ -20,7 +20,7 @@
 .nav__links a:hover, .nav__links a[aria-current='page'] { color: var(--gold); }
 .nav__links a[aria-current='page'] { border-bottom-color: var(--gold); }
 .nav__actions { display: flex; align-items: center; gap: 10px; }
-.nav__call { display: none; }
+.nav__actions .nav__call { display: none; }
 .wa-long { display: none; }
 
 .nav__burger {
@@ -50,7 +50,7 @@
 }
 @media (min-width: 1040px) {
   .nav__links { display: flex; }
-  .nav__call { display: inline-flex; }
+  .nav__actions .nav__call { display: inline-flex; }
   .nav__burger, .nav__mobile { display: none !important; }
 }
 
