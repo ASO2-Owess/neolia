@@ -1,0 +1,16 @@
+{
+  "siteUrl": "https://neolia-chocolat.vercel.app",
+  "siteName": "Neolia Chocolat",
+  "locale": "fr_CI",
+  "phoneDisplay": "0706269826",
+  "phoneTel": "+2250706269826",
+  "whatsappDisplay": "0101285017",
+  "whatsappNumber": "2250101285017",
+  "city": "Abidjan",
+  "country": "CI",
+  "messages": {
+    "info": "Bonjour Neolia Chocolat, je souhaite avoir des informations sur vos chocolats.",
+    "sucre": "Bonjour Neolia Chocolat, je souhaite commander : Chocolat noir sucré.",
+    "nonSucre": "Bonjour Neolia Chocolat, je souhaite commander : Chocolat noir non sucré."
+  }
+}
