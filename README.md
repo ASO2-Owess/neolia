@@ -56,5 +56,8 @@ Branche principale : `main`.
 
 ## À compléter avant le lancement
 
-Les contenus marqués `data-placeholder` (descriptions des étapes, histoire, formats, livraison, paiement, témoignages réels)
-et les pages légales. `npm run check -- --strict` bloque tant qu'il en reste.
+- **Avis clients** : ajouter de vrais avis (avec l'accord du client) dans `src/data/testimonials.json`
+  (`[{ "name": "Prénom", "city": "Abidjan", "text": "…" }]`). Tant que la liste est vide, la section affiche une invitation à donner son avis.
+  Ne jamais publier d'avis inventés (illégal pour un commerce et sanctionné par Google).
+- Histoire de la marque (année, fondateur), URL des réseaux sociaux et pages légales.
+- `npm run check -- --strict` bloque si un contenu `data-placeholder` réapparaît.

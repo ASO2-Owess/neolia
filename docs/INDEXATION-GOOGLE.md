@@ -45,15 +45,13 @@ Une requête de marque comme « Neolia Chocolat » est la plus facile à gagner,
 - **Fiche Google Business Profile** (Google Maps) pour Neolia à Abidjan : téléphone, horaires, photos, lien vers le site. C'est le levier local n° 1.
 - Créer les pages **Facebook, Instagram, TikTok** (les icônes du pied de page pointent aujourd'hui vers « bientôt ») et y mettre le lien du site ; ajouter ensuite leurs URL dans `sameAs` de l'Organization (`src/pages/index.html`).
 - Obtenir quelques **liens entrants** : annuaires ivoiriens, blogs gastronomie, partenaires, presse locale.
-- Collecter de **vrais avis clients** et remplacer les témoignages d'exemple.
+- Collecter de **vrais avis clients** et les ajouter dans `src/data/testimonials.json` (avec accord du client).
 - Publier régulièrement du contenu utile (recettes, origine du cacao, conseils de dégustation) : ajouter des pages dans `src/pages/`.
 
 ## 5. Avant de lancer : contenus à compléter
 
-`npm run check -- --strict` liste les contenus « à fournir » encore visibles (`data-placeholder`) :
-descriptions des 5 étapes, histoire (année, fondateur), savoir-faire, formats, livraison, moyens de paiement,
-témoignages d'exemple. Les remplacer par du vrai contenu avant la mise en ligne : Google valorise le contenu
-original, et des textes provisoires nuisent à la crédibilité.
+Les contenus provisoires ont été retirés. `npm run check -- --strict` bloque si un texte `data-placeholder` réapparaît.
+La section avis reste une invitation à donner son avis tant que `src/data/testimonials.json` est vide : n'y mettre que de vrais avis.
 
 Pages légales manquantes : « Mentions légales », « Politique de confidentialité » et « Conditions d'utilisation »
 pointent encore vers la page « bientôt ». À rédiger (avec un professionnel du droit si besoin) avant la promotion du site.
