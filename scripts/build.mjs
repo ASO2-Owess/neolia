@@ -28,6 +28,18 @@ const vars = {
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+
+// Avis clients : uniquement de vrais avis, avec accord du client, dans src/data/testimonials.json
+// Format : [{ "name": "Prénom", "city": "Abidjan", "text": "…" }]
+const testimonialsFile = join(SRC, 'data/testimonials.json');
+const testimonials = existsSync(testimonialsFile) ? JSON.parse(readFileSync(testimonialsFile, 'utf8')) : [];
+if (testimonials.length) {
+  vars.TESTIMONIALS_TITLE = 'Témoignages';
+  vars.TESTIMONIALS = `<div class="testimonials__grid">\n${testimonials.map((t) => `      <figure class="quote">\n        <blockquote>« ${esc(t.text)} »</blockquote>\n        <figcaption>— ${esc(t.name)}${t.city ? `, ${esc(t.city)}` : ''}</figcaption>\n      </figure>`).join('\n')}\n    </div>`;
+} else {
+  vars.TESTIMONIALS_TITLE = 'Votre avis compte';
+  vars.TESTIMONIALS = `<div class="testimonials__invite">\n      <p>Vous avez goûté Neolia Chocolat ? Dites-nous ce que vous en pensez : vos retours nous aident à faire un chocolat toujours meilleur.</p>\n      <a class="btn btn--wa" href="${wa('Bonjour Neolia Chocolat, je souhaite partager mon avis sur votre chocolat.')}" target="_blank" rel="noopener noreferrer">Donner mon avis sur WhatsApp</a>\n    </div>`;
+}
 const fill = (s) => s.replace(/\{\{([A-Z_]+)\}\}/g, (m, k) => (k in vars ? vars[k] : m));
 
 // <x-img name="hero" alt="..." sizes="100vw" class="..." eager></x-img>  ->  <img srcset ...>
